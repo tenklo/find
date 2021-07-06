@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find", "Find\Find.csproj", "{7D50B6F3-1C18-4FB9-9486-59CEB1AE32BA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{5BF5DCBB-FB4B-4F1D-A2A7-2CA12B2E040F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{F73AE41D-E497-4C1B-B26A-ACE872B3325F}"
@@ -13,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{AC00097F-9BDD-43AD-9731-8F4109F9EA2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "..\..\DataAccess\Models\Models.csproj", "{FABAEA07-F4FC-4185-B98C-AED95CA9EE0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "DataAccess\Models\Models.csproj", "{FABAEA07-F4FC-4185-B98C-AED95CA9EE0D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedBL", "SharedBL", "{CD09112F-B386-4A98-9BCA-9EEC8C5589FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedVM", "SharedVM", "{F976AC4A-0FE3-46B9-A31A-15BDB7265CD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "..\..\Contracts\Contracts.csproj", "{51DF01AB-EAEF-429E-8B36-ECC960B0CAD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{51DF01AB-EAEF-429E-8B36-ECC960B0CAD8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Find", "Find", "{C8214704-92CB-47D9-A96D-0B1357DF7D86}"
 EndProject
@@ -33,13 +31,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FindUpdaterVM", "FindUpdate
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FindUpdaterBL", "FindUpdaterBL", "{346737CE-296F-4918-AA48-19D0CA62F002}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindViewModel", "..\..\Modules\Find\FindVM\FindViewModel\FindViewModel.csproj", "{74F9DAD7-6A5F-418A-B2D4-F59A22A2777A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindViewModel", "Modules\Find\FindVM\FindViewModel\FindViewModel.csproj", "{74F9DAD7-6A5F-418A-B2D4-F59A22A2777A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindBusinessLogic", "..\..\Modules\Find\FindBL\FindBusinessLogic\FindBusinessLogic.csproj", "{5CA209C5-5233-4C72-A817-93C6E8AC8D27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindBusinessLogic", "Modules\Find\FindBL\FindBusinessLogic\FindBusinessLogic.csproj", "{5CA209C5-5233-4C72-A817-93C6E8AC8D27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindUpdaterBusinessLogic", "..\..\Modules\FindUpdater\FindUpdaterBL\FindUpdaterBusinessLogic\FindUpdaterBusinessLogic.csproj", "{246A618F-EE2E-4406-987F-D0B64B65BE60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindUpdaterBusinessLogic", "Modules\FindUpdater\FindUpdaterBL\FindUpdaterBusinessLogic\FindUpdaterBusinessLogic.csproj", "{246A618F-EE2E-4406-987F-D0B64B65BE60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindUpdaterViewModel", "..\..\Modules\FindUpdater\FindUpdaterVM\FindUpdaterViewModel\FindUpdaterViewModel.csproj", "{DADBEA44-CE66-446A-A5FA-D0931EF582AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindUpdaterViewModel", "Modules\FindUpdater\FindUpdaterVM\FindUpdaterViewModel\FindUpdaterViewModel.csproj", "{DADBEA44-CE66-446A-A5FA-D0931EF582AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedBusinessLogic", "Common\SharedBL\SharedBusinessLogic\SharedBusinessLogic.csproj", "{36CC4A4E-FDE5-4652-9ECD-47730067FD87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedViewModel", "Common\SharedVM\SharedViewModel\SharedViewModel.csproj", "{0F308FD0-9C6C-4778-B173-3399478C2D63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Find", "Find", "{2B8E9F65-1F70-4EE0-BAA5-D4D909C03284}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FindUpdater", "FindUpdater", "{3A6183C3-299D-4FDC-94E2-D138A5F1EFA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindUpdater", "Applications\FindUpdater\FindUpdater\FindUpdater.csproj", "{1A32FA06-7386-4903-9E35-B5F54D79F7F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find", "Applications\Find\Find\Find.csproj", "{998E1EFC-20A1-415F-84C5-AE48F4B402A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +57,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7D50B6F3-1C18-4FB9-9486-59CEB1AE32BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D50B6F3-1C18-4FB9-9486-59CEB1AE32BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D50B6F3-1C18-4FB9-9486-59CEB1AE32BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D50B6F3-1C18-4FB9-9486-59CEB1AE32BA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FABAEA07-F4FC-4185-B98C-AED95CA9EE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FABAEA07-F4FC-4185-B98C-AED95CA9EE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FABAEA07-F4FC-4185-B98C-AED95CA9EE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -75,12 +81,27 @@ Global
 		{DADBEA44-CE66-446A-A5FA-D0931EF582AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DADBEA44-CE66-446A-A5FA-D0931EF582AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DADBEA44-CE66-446A-A5FA-D0931EF582AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CC4A4E-FDE5-4652-9ECD-47730067FD87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CC4A4E-FDE5-4652-9ECD-47730067FD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CC4A4E-FDE5-4652-9ECD-47730067FD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CC4A4E-FDE5-4652-9ECD-47730067FD87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F308FD0-9C6C-4778-B173-3399478C2D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F308FD0-9C6C-4778-B173-3399478C2D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F308FD0-9C6C-4778-B173-3399478C2D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F308FD0-9C6C-4778-B173-3399478C2D63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A32FA06-7386-4903-9E35-B5F54D79F7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A32FA06-7386-4903-9E35-B5F54D79F7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A32FA06-7386-4903-9E35-B5F54D79F7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A32FA06-7386-4903-9E35-B5F54D79F7F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998E1EFC-20A1-415F-84C5-AE48F4B402A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998E1EFC-20A1-415F-84C5-AE48F4B402A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{998E1EFC-20A1-415F-84C5-AE48F4B402A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{998E1EFC-20A1-415F-84C5-AE48F4B402A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7D50B6F3-1C18-4FB9-9486-59CEB1AE32BA} = {5BF5DCBB-FB4B-4F1D-A2A7-2CA12B2E040F}
 		{FABAEA07-F4FC-4185-B98C-AED95CA9EE0D} = {A31FC02F-398D-4B5A-9DBF-C76C7FDCAD9B}
 		{CD09112F-B386-4A98-9BCA-9EEC8C5589FE} = {F73AE41D-E497-4C1B-B26A-ACE872B3325F}
 		{F976AC4A-0FE3-46B9-A31A-15BDB7265CD0} = {F73AE41D-E497-4C1B-B26A-ACE872B3325F}
@@ -94,6 +115,12 @@ Global
 		{5CA209C5-5233-4C72-A817-93C6E8AC8D27} = {FE51415F-4AAF-48DF-A2E6-79EB4581BB5E}
 		{246A618F-EE2E-4406-987F-D0B64B65BE60} = {346737CE-296F-4918-AA48-19D0CA62F002}
 		{DADBEA44-CE66-446A-A5FA-D0931EF582AA} = {1A2F8282-A32D-42A1-B3C7-CFDA58128F74}
+		{36CC4A4E-FDE5-4652-9ECD-47730067FD87} = {CD09112F-B386-4A98-9BCA-9EEC8C5589FE}
+		{0F308FD0-9C6C-4778-B173-3399478C2D63} = {F976AC4A-0FE3-46B9-A31A-15BDB7265CD0}
+		{2B8E9F65-1F70-4EE0-BAA5-D4D909C03284} = {5BF5DCBB-FB4B-4F1D-A2A7-2CA12B2E040F}
+		{3A6183C3-299D-4FDC-94E2-D138A5F1EFA1} = {5BF5DCBB-FB4B-4F1D-A2A7-2CA12B2E040F}
+		{1A32FA06-7386-4903-9E35-B5F54D79F7F7} = {3A6183C3-299D-4FDC-94E2-D138A5F1EFA1}
+		{998E1EFC-20A1-415F-84C5-AE48F4B402A6} = {2B8E9F65-1F70-4EE0-BAA5-D4D909C03284}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41B29F2E-31F1-4C04-9F95-5561522F5237}

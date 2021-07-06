@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\SharedBL\" />
+    <Folder Include="Common\SharedVM\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="Modules\FindUpdater\FindUpdaterBL\" />
+    <Folder Include="Modules\FindUpdater\FindUpdaterVM\" />
+    <Folder Include="Modules\Find\FindBL\" />
+    <Folder Include="Modules\Find\FindVM\" />
+  </ItemGroup>
+
+</Project>
