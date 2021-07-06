@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Modules\Find\FindVM\FindViewModel\FindViewModel.csproj">
+      <Project>{279E5139-3191-41B5-911B-DFD1A4FA6625}</Project>
+      <Name>FindViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

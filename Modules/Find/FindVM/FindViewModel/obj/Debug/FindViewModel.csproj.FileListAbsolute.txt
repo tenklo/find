@@ -1,0 +1,14 @@
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\obj\Debug\FindViewModel.csprojAssemblyReference.cache
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\obj\Debug\FindViewModel.Properties.Resources.resources
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\obj\Debug\FindViewModel.csproj.GenerateResource.cache
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\bin\Debug\FindViewModel.dll
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\bin\Debug\FindViewModel.pdb
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\bin\Debug\FindBusinessLogic.dll
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\bin\Debug\SharedBusinessLogic.dll
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\bin\Debug\SharedViewModel.dll
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\bin\Debug\SharedBusinessLogic.pdb
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\bin\Debug\SharedViewModel.pdb
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\bin\Debug\FindBusinessLogic.pdb
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\obj\Debug\FindViewModel.csproj.CopyComplete
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\obj\Debug\FindViewModel.dll
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindVM\FindViewModel\obj\Debug\FindViewModel.pdb

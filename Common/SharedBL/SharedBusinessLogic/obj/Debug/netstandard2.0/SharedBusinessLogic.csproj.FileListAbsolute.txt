@@ -1,0 +1,7 @@
+C:\Users\daniel.deibert\Desktop\Find\Common\SharedBL\SharedBusinessLogic\bin\Debug\netstandard2.0\SharedBusinessLogic.deps.json
+C:\Users\daniel.deibert\Desktop\Find\Common\SharedBL\SharedBusinessLogic\bin\Debug\netstandard2.0\SharedBusinessLogic.dll
+C:\Users\daniel.deibert\Desktop\Find\Common\SharedBL\SharedBusinessLogic\bin\Debug\netstandard2.0\SharedBusinessLogic.pdb
+C:\Users\daniel.deibert\Desktop\Find\Common\SharedBL\SharedBusinessLogic\obj\Debug\netstandard2.0\SharedBusinessLogic.AssemblyInfoInputs.cache
+C:\Users\daniel.deibert\Desktop\Find\Common\SharedBL\SharedBusinessLogic\obj\Debug\netstandard2.0\SharedBusinessLogic.AssemblyInfo.cs
+C:\Users\daniel.deibert\Desktop\Find\Common\SharedBL\SharedBusinessLogic\obj\Debug\netstandard2.0\SharedBusinessLogic.dll
+C:\Users\daniel.deibert\Desktop\Find\Common\SharedBL\SharedBusinessLogic\obj\Debug\netstandard2.0\SharedBusinessLogic.pdb
