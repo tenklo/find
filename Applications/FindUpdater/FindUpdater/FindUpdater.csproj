@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Modules\FindUpdater\FindUpdaterVM\FindUpdaterViewModel\FindUpdaterViewModel.csproj">
+      <Project>{c64f868b-5af0-4a69-97fd-ca2871955142}</Project>
+      <Name>FindUpdaterViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

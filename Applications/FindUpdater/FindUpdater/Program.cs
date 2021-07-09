@@ -12,7 +12,6 @@ namespace FindUpdater
     {
         static void Main(string[] args)
         {
-            FindUpdaterViewModel.FindUpdaterViewModel findUpdaterViewModel = new FindUpdaterViewModel.FindUpdaterViewModel();
             Console.ReadLine();
         }
     }
