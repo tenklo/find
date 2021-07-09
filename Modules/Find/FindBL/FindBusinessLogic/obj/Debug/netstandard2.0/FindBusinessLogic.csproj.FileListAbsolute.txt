@@ -5,3 +5,4 @@ C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindBL\FindBusinessLogic\obj\D
 C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindBL\FindBusinessLogic\obj\Debug\netstandard2.0\FindBusinessLogic.AssemblyInfo.cs
 C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindBL\FindBusinessLogic\obj\Debug\netstandard2.0\FindBusinessLogic.dll
 C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindBL\FindBusinessLogic\obj\Debug\netstandard2.0\FindBusinessLogic.pdb
+C:\Users\daniel.deibert\Desktop\Find\Modules\Find\FindBL\FindBusinessLogic\obj\Debug\netstandard2.0\FindBusinessLogic.csprojAssemblyReference.cache

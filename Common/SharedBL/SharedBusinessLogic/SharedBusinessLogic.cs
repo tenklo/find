@@ -12,7 +12,7 @@ namespace SharedBusinessLogic
         {
             List<string> driveLetters = new List<string>();
 
-            var drives = System.IO.DriveInfo.GetDrives();
+            var drives = DriveInfo.GetDrives();
             foreach (var drive in drives)
             {
                 var driveType = drive.DriveType;
@@ -21,5 +21,7 @@ namespace SharedBusinessLogic
             }
             return driveLetters;
         }
+
+
     }
 }
