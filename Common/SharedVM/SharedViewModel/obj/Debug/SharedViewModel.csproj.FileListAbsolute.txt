@@ -1,7 +1,0 @@
-C:\Users\daniel.deibert\Desktop\Find\Common\SharedVM\SharedViewModel\obj\Debug\SharedViewModel.Properties.Resources.resources
-C:\Users\daniel.deibert\Desktop\Find\Common\SharedVM\SharedViewModel\obj\Debug\SharedViewModel.csproj.GenerateResource.cache
-C:\Users\daniel.deibert\Desktop\Find\Common\SharedVM\SharedViewModel\obj\Debug\SharedViewModel.csprojAssemblyReference.cache
-C:\Users\daniel.deibert\Desktop\Find\Common\SharedVM\SharedViewModel\bin\Debug\SharedViewModel.dll
-C:\Users\daniel.deibert\Desktop\Find\Common\SharedVM\SharedViewModel\bin\Debug\SharedViewModel.pdb
-C:\Users\daniel.deibert\Desktop\Find\Common\SharedVM\SharedViewModel\obj\Debug\SharedViewModel.dll
-C:\Users\daniel.deibert\Desktop\Find\Common\SharedVM\SharedViewModel\obj\Debug\SharedViewModel.pdb
