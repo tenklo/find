@@ -103,6 +103,10 @@
       <Project>{5d1fb038-9440-486e-8365-dd13e697942a}</Project>
       <Name>SharedViewModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\..\DataAccess\Models\Models.csproj">
+      <Project>{FABAEA07-F4FC-4185-B98C-AED95CA9EE0D}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\FindBL\FindBusinessLogic\FindBusinessLogic.csproj">
       <Project>{5ca209c5-5233-4c72-a817-93c6e8ac8d27}</Project>
       <Name>FindBusinessLogic</Name>

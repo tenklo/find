@@ -1,25 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 
 namespace SharedBusinessLogic
 {
     public class SharedBusinessLogic
     {
-        public List<string> EnumerateDrives()
+        public List<Models.Directory> EnumerateDrives()
         {
-            List<string> driveLetters = new List<string>();
+            List<Models.Directory> drivesToDisplay = new List<Models.Directory>();
 
             var drives = DriveInfo.GetDrives();
             foreach (var drive in drives)
             {
                 var driveType = drive.DriveType;
                 if (driveType.Equals(DriveType.Fixed) && drive.IsReady)
-                    driveLetters.Add(drive.Name);
+                    drivesToDisplay.Add(new Models.Directory()
+                    {
+                        Name = drive.Name,
+                        Path = drive.Name
+                    });
             }
-            return driveLetters;
+            return drivesToDisplay;
         }
 
 

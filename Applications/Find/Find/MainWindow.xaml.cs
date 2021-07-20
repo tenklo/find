@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using FindViewModel;
+using System.Windows;
 
 namespace Find
 {
