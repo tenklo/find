@@ -29,5 +29,10 @@ namespace FindViewModel
 
             //findUpdaterBusinessLogic.MonitorFileSystem(sharedBusinessLogic.EnumerateDrives());
         }
+
+        public void SearchText()
+        {
+
+        }
     }
 }
