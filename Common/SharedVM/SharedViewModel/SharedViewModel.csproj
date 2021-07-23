@@ -81,6 +81,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Contracts\Contracts.csproj">
+      <Project>{51df01ab-eaef-429e-8b36-ecc960b0cad8}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\DataAccess\Models\Models.csproj">
       <Project>{fabaea07-f4fc-4185-b98c-aed95ca9ee0d}</Project>
       <Name>Models</Name>

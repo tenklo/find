@@ -1,17 +1,18 @@
-﻿using System;
+﻿using Contracts.Common.SharedVM;
+using System;
 
 namespace SharedViewModel
 {
-    public class FileViewModel : BaseViewModel
+    public class FileViewModel : BaseViewModel, IFileViewModel
     {
-        private string _fileName;
+        private string _name;
 
-        public string FileName
+        public string Name
         {
-            get { return _fileName; }
+            get { return _name; }
             set
             {
-                _fileName = value;
+                _name = value;
                 OnPropertyChanged();
             }
         }
@@ -64,14 +65,29 @@ namespace SharedViewModel
             }
         }
 
+        private string _fileType;
 
-        public FileViewModel(Models.File file)
+        public string FileType
         {
-            FileName = file.FileName;
+            get { return _fileType; }
+            set
+            {
+                _fileType = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public IFileViewModel CreateFileViewModel(Models.File file)
+        {
+            Name = file.Name;
             Path = file.Path;
             DriveLetter = file.DriveLetter;
             Content = file.Content;
             LastChanged = file.LastChanged;
+            FileType = FileType;
+
+            return this;
         }
+
     }
 }

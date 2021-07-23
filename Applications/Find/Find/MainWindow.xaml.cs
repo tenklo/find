@@ -1,4 +1,5 @@
-﻿using FindViewModel;
+﻿using Contracts.Modules.Find.FindVM;
+using FindViewModel;
 using System.Windows;
 
 namespace Find
@@ -11,9 +12,7 @@ namespace Find
         public MainWindow()
         {
             InitializeComponent();
-
-            FindViewModel.FindViewModel findViewModel = new FindViewModel.FindViewModel();
-            DataContext = findViewModel;
         }
+
     }
 }

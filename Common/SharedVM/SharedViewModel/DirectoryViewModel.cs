@@ -1,8 +1,9 @@
-﻿using System.Collections.ObjectModel;
+﻿using Contracts.Common.SharedVM;
+using System.Collections.ObjectModel;
 
 namespace SharedViewModel
 {
-    public class DirectoryViewModel : BaseViewModel
+    public class DirectoryViewModel : BaseViewModel, IDirectoryViewModel
     {
         private string _name;
 
@@ -42,16 +43,17 @@ namespace SharedViewModel
             }
         }
 
-        public ObservableCollection<FileViewModel> FileViewModels { get; } = new ObservableCollection<FileViewModel>();
+        public ObservableCollection<IFileViewModel> FileViewModels { get; } = new ObservableCollection<IFileViewModel>();
 
-
-        public DirectoryViewModel(Models.Directory directory)
+        public IDirectoryViewModel CreateDirectoryViewModel(Models.Directory directory)
         {
             Name = directory.Name;
             Path = directory.Path;
             IsDriveSelected = directory.IsDriveSelected;
 
-            directory.Files.ForEach(file => FileViewModels.Add(new FileViewModel(file)));
+            directory.Files.ForEach(file => FileViewModels.Add(new FileViewModel().CreateFileViewModel(file)));
+
+            return this;
         }
     }
 }

@@ -34,9 +34,10 @@
                 <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBox Text="Test123"/>
+            <TextBox Text="{Binding TextToSearch, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Button Grid.Column="2" 
+                    Command="{Binding SearchTextCommand, Mode=OneWay}"
                     Background="Transparent" 
                     BorderBrush="Transparent">
                 <Viewbox>
@@ -52,7 +53,8 @@
 
         <DataGrid Grid.Row="3"
                   Grid.Column="1"
-            ItemsSource="{Binding Files}" />
+                  ItemsSource="{Binding Files, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                  AutoGenerateColumns="True"/>
 
         <Grid Grid.Row="5"
               Grid.Column="1">
@@ -62,22 +64,47 @@
                 <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
 
-            <ListView ItemsSource="{Binding DrivesToDisplay, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView ItemsSource="{Binding DrivesToDisplay, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                      BorderBrush="Transparent">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <DockPanel>
-                            <CheckBox IsChecked="{Binding IsDriveSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <CheckBox Margin="0,0,10,0"
+                                IsChecked="{Binding IsDriveSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                             <TextBlock Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                         </DockPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
 
-            <TextBox Grid.Column="2"
-                     Text="{Binding ConfigurationText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-                     TextWrapping="Wrap"
-                     AcceptsReturn="True"
-                     VerticalScrollBarVisibility="Visible"/>
+            <Grid Grid.Column="2">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                    <RowDefinition Height="0.05*"/>
+
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Include filetype" Grid.Row="0" Grid.Column="0" />
+
+                <TextBox Grid.Column="0"
+                         Grid.Row="1"
+                         Text="{Binding IncludedFileTypes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         TextWrapping="Wrap"
+                         VerticalScrollBarVisibility="Visible"/>
+
+                <Label Content="Exclude filetype" Grid.Row="3" Grid.Column="0" />
+
+                <TextBox Grid.Column="0"
+                         Grid.Row="4"
+                         Text="{Binding ExcludedFileTypes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         TextWrapping="Wrap"
+                         VerticalScrollBarVisibility="Visible"/>
+            </Grid>
         </Grid>
 
         <ProgressBar Grid.Row="7" Grid.Column="1"/>

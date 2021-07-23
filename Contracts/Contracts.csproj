@@ -5,13 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Common\SharedBL\" />
-    <Folder Include="Common\SharedVM\" />
     <Folder Include="DataAccess\" />
     <Folder Include="Modules\FindUpdater\FindUpdaterBL\" />
     <Folder Include="Modules\FindUpdater\FindUpdaterVM\" />
     <Folder Include="Modules\Find\FindBL\" />
-    <Folder Include="Modules\Find\FindVM\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\Models\Models.csproj" />
   </ItemGroup>
 
 </Project>

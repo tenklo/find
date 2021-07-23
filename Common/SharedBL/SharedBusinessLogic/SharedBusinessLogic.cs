@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using Contracts.Common.SharedBL;
+using System.Collections.Generic;
 using System.IO;
 
 namespace SharedBusinessLogic
 {
-    public class SharedBusinessLogic
+    public class SharedBusinessLogic : ISharedBusinessLogic
     {
         public List<Models.Directory> EnumerateDrives()
         {
@@ -13,7 +14,7 @@ namespace SharedBusinessLogic
             foreach (var drive in drives)
             {
                 var driveType = drive.DriveType;
-                if (driveType.Equals(DriveType.Fixed) && drive.IsReady)
+                if (drive.IsReady)
                     drivesToDisplay.Add(new Models.Directory()
                     {
                         Name = drive.Name,

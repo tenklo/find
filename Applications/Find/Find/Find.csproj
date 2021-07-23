@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SimpleInjector, Version=5.0.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SimpleInjector.5.3.2\lib\net461\SimpleInjector.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -63,6 +66,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Bootstrapper.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -86,6 +90,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -95,6 +100,30 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\SharedBL\SharedBusinessLogic\SharedBusinessLogic.csproj">
+      <Project>{36cc4a4e-fde5-4652-9ecd-47730067fd87}</Project>
+      <Name>SharedBusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\SharedVM\SharedViewModel\SharedViewModel.csproj">
+      <Project>{5d1fb038-9440-486e-8365-dd13e697942a}</Project>
+      <Name>SharedViewModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Contracts\Contracts.csproj">
+      <Project>{51DF01AB-EAEF-429E-8B36-ECC960B0CAD8}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Modules\FindUpdater\FindUpdaterBL\FindUpdaterBusinessLogic\FindUpdaterBusinessLogic.csproj">
+      <Project>{246a618f-ee2e-4406-987f-d0b64b65be60}</Project>
+      <Name>FindUpdaterBusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Modules\FindUpdater\FindUpdaterVM\FindUpdaterViewModel\FindUpdaterViewModel.csproj">
+      <Project>{c64f868b-5af0-4a69-97fd-ca2871955142}</Project>
+      <Name>FindUpdaterViewModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Modules\Find\FindBL\FindBusinessLogic\FindBusinessLogic.csproj">
+      <Project>{5ca209c5-5233-4c72-a817-93c6e8ac8d27}</Project>
+      <Name>FindBusinessLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Modules\Find\FindVM\FindViewModel\FindViewModel.csproj">
       <Project>{279E5139-3191-41B5-911B-DFD1A4FA6625}</Project>
       <Name>FindViewModel</Name>
